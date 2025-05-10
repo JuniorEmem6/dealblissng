@@ -13,6 +13,13 @@ const Header = () => {
     // You would typically redirect or filter content based on searchQuery
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <header className="sticky top-0 z-50 bg-white text-blue-500 shadow-md">
       <div className="container mx-auto px-4 py-6 flex flex-wrap items-center justify-between">
@@ -145,21 +152,21 @@ const Header = () => {
                 hidden ? " " : "hidden"
               } group-hover:block`}
             >
-             <Link to="/oraimo">
+             <Link to="/oraimo" onClick={scrollToTop}>
              <p
                 className="block px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-blue-600"
               >
                 Oraimo
               </p>
              </Link>
-              <Link to="/fundednext">
+              <Link to="/fundednext" onClick={scrollToTop}>
               <p
                 className="block px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-blue-600"
               >
                 FundedNext
               </p>
               </Link>
-              <Link to="/oraimo">
+              <Link to="/oraimo" onClick={scrollToTop}>
               <p
                 className="block px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-blue-600"
               >

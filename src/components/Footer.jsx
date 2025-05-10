@@ -9,6 +9,12 @@ import {
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+    const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      };
   return (
     <footer className="bg-gray-900 text-gray-300 pt-12 pb-8 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -88,18 +94,18 @@ const Footer = () => {
               </Link>
               <li className="hover:text-white transition-colors"><a href="http://wa.me/2347039729635" target="_blank" rel="noopener noreferrer">Contact</a></li>
               <div className="flex gap-4">
-                <Link to="/privacy">
+                <Link to="/privacy" onClick={scrollToTop}>
                   <li className="hover:text-white transition-colors">
                     Privacy Policy
                   </li>
                 </Link>
-                <Link to="/term">
+                <Link to="/term" onClick={scrollToTop}>
                   <li className="hover:text-white transition-colors">
                     Terms of Service
                   </li>
                 </Link>
 
-                <Link to="/affiliate">
+                <Link to="/affiliate" onClick={scrollToTop}>
                   <li className="hover:text-white transition-colors">
                     Affilate Disclosure
                   </li>
@@ -114,15 +120,15 @@ const Footer = () => {
               Trending Deals
             </h4>
             <ul className="space-y-2">
-              <Link to="/fundednext">
+              <Link to="/fundednext" onClick={scrollToTop}>
                 <li className="hover:text-white transition-colors">
                   FundedNext
                 </li>
               </Link>
-              <Link to="/exness">
+              <Link to="/exness" onClick={scrollToTop}>
                 <li className="hover:text-white transition-colors">Exness</li>
               </Link>
-              <Link to="/ftmo">
+              <Link to="/ftmo" onClick={scrollToTop}>
                 <li className="hover:text-white transition-colors">FTMO</li>
               </Link>
             </ul>

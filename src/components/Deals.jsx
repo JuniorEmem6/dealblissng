@@ -11,7 +11,8 @@ const TopDeals = () => {
       description: 'Get an exclusive discount on Oraimo Nigeria',
       category: 'Electronics',
       image: 'https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-      featured: true
+      featured: true,
+      link: "https://fundednext.com/?fpr=aniekan61"
     },
     {
       id: 2,
@@ -19,7 +20,9 @@ const TopDeals = () => {
       discount: 'FUNDEDNEXT',
       description: 'Get an exclusive discount on FundedNext',
       category: 'Prop Firm',
-      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+      link: "https://fundednext.com/?fpr=aniekan61"
+
     },
     {
       id: 3,
@@ -27,7 +30,8 @@ const TopDeals = () => {
       discount: 'SHOPINV12',
       description: 'Get an exclusive discount on FundedNext',
       category: 'Appliances',
-      image: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+      image: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+      link: "https://fundednext.com/?fpr=aniekan61"
     },
 
   ];
@@ -38,7 +42,7 @@ const TopDeals = () => {
         {/* Section Header */}
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-8">
           <div>
-            <h2 className="text-[25px] font-bold text-blue-500 sm:text-3xl">
+            <h2 className="text-[20px] font-bold text-blue-500 sm:text-3xl">
               Top Deals You Can't Miss Today
             </h2>
             {/* <p className="mt-2 text-lg text-gray-600">
@@ -101,10 +105,12 @@ const TopDeals = () => {
               
               {/* CTA Button */}
               <div className="px-5 pb-5">
+                <a href={deal.link}>
                 <button className="w-full py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md transition-colors flex items-center justify-center">
                   <FiShoppingBag className="mr-2" />
                   Visit Site
                 </button>
+                </a>
               </div>
             </div>
           ))}

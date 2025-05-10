@@ -100,7 +100,7 @@ const Header = () => {
         <nav
           className={`${
             isMenuOpen ? "block" : "hidden"
-          } w-full md:w-auto md:flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 mt-4 md:mt-0 pb-2 md:pb-0`}
+          } w-full md:w-auto md:flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 mt-4 md:mt-0 pb-2 md:pb-0 border-bottom-2`}
         >
 
           <Link to="/">
@@ -111,11 +111,11 @@ const Header = () => {
           </p>
           </Link>
 
-          <Link to="/products">
+          {/* <Link to="/deal">
             <p className="block hover:text-blue-400 transition duration-200 py-2 px-1 font-medium">
               Today Deal
             </p>
-          </Link>
+          </Link> */}
 
           {/* Store with dropdown */}
           <div className="relative group">
@@ -145,24 +145,27 @@ const Header = () => {
                 hidden ? " " : "hidden"
               } group-hover:block`}
             >
-              <a
-                href="/store/featured"
-                className="block px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-blue-600"
-              >
-                FundedNext
-              </a>
-              <a
-                href="/store/categories"
+             <Link to="/oraimo">
+             <p
                 className="block px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-blue-600"
               >
                 Oraimo
-              </a>
-              <a
-                href="/store/locations"
+              </p>
+             </Link>
+              <Link to="/fundednext">
+              <p
+                className="block px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-blue-600"
+              >
+                FundedNext
+              </p>
+              </Link>
+              <Link to="/oraimo">
+              <p
                 className="block px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-blue-600"
               >
                 Oraimo Ghana
-              </a>
+              </p>
+              </Link>
             </div>
           </div>
 
@@ -173,7 +176,7 @@ const Header = () => {
           </Link>
 
           <a
-            href="/contact"
+            href="http://wa.me/2347039729635"
             className="block hover:text-blue-400 transition duration-200 py-2 px-1 font-medium"
           >
             Contact Us

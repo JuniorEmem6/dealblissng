@@ -1,50 +1,43 @@
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const PopularStores = () => {
   // Sample store data
   const stores = [
     {
       id: 1,
-      name: 'Amazon',
-      logo: 'https://logo.clearbit.com/amazon.com',
-      category: 'E-commerce',
-      rating: 4.8
+      name: "Oraimo Nigeria",
+      logo: "https://logo.clearbit.com/oraimo.com",
+      category: "Electronic",
+      link: "",
+      address: "/oraimo",
+      rating: 4.8,
     },
     {
       id: 2,
-      name: 'Walmart',
-      logo: 'https://logo.clearbit.com/walmart.com',
-      category: 'Retail',
-      rating: 4.5
+      name: "FundedNext",
+      logo: "https://logo.clearbit.com/fundednext.com",
+      category: "Prop Firm",
+      link: "",
+      address: "/fundednext",
+      rating: 4.5,
     },
     {
       id: 3,
-      name: 'Target',
-      logo: 'https://logo.clearbit.com/target.com',
-      category: 'Department Store',
-      rating: 4.6
+      name: "Headway",
+      logo: "https://logo.clearbit.com/headway.com",
+      category: "Broker",
+      link: "",
+      rating: 4.6,
     },
     {
       id: 4,
-      name: 'Best Buy',
-      logo: 'https://logo.clearbit.com/bestbuy.com',
-      category: 'Electronics',
-      rating: 4.3
+      name: "Shopinverse",
+      logo: "https://logo.clearbit.com/shopinverse.com",
+      category: "Appliances",
+      address: "",
+      rating: 4.3,
     },
-    {
-      id: 5,
-      name: 'Nike',
-      logo: 'https://logo.clearbit.com/nike.com',
-      category: 'Sportswear',
-      rating: 4.7
-    },
-    {
-      id: 6,
-      name: 'Apple',
-      logo: 'https://logo.clearbit.com/apple.com',
-      category: 'Technology',
-      rating: 4.9
-    }
   ];
 
   return (
@@ -63,22 +56,24 @@ const PopularStores = () => {
         {/* Store Cards Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {stores.map((store) => (
-            <div 
-              key={store.id} 
+            <div
+              key={store.id}
               className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
             >
               <div className="p-6">
                 <div className="flex items-center mb-4">
-                  <img 
-                    src={store.logo} 
-                    alt={`${store.name} logo`} 
+                  <img
+                    src={store.logo}
+                    alt={`${store.name} logo`}
                     className="h-12 w-12 object-contain mr-4"
                     onError={(e) => {
-                      e.target.src = 'https://via.placeholder.com/48'; // Fallback image
+                      e.target.src = "https://via.placeholder.com/48"; // Fallback image
                     }}
                   />
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900">{store.name}</h3>
+                    <h3 className="text-lg font-semibold text-gray-900">
+                      {store.name}
+                    </h3>
                     <p className="text-sm text-gray-500">{store.category}</p>
                   </div>
                 </div>
@@ -87,18 +82,34 @@ const PopularStores = () => {
                     {[...Array(5)].map((_, i) => (
                       <svg
                         key={i}
-                        className={`w-5 h-5 ${i < Math.floor(store.rating) ? 'text-yellow-400' : 'text-gray-300'}`}
+                        className={`w-5 h-5 ${
+                          i < Math.floor(store.rating)
+                            ? "text-yellow-400"
+                            : "text-gray-300"
+                        }`}
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
                         <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                       </svg>
                     ))}
-                    <span className="ml-2 text-sm text-gray-600">{store.rating}</span>
+                    <span className="ml-2 text-sm text-gray-600">
+                      {store.rating}
+                    </span>
                   </div>
-                  <button className="px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-md hover:bg-blue-700 transition-colors">
-                    Visit Store
-                  </button>
+
+                  {store.address ? (
+                    <Link to={store.address}>
+                      <p className="px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-md hover:bg-blue-700 transition-colors">Visit Store</p>
+                    </Link>
+                  ) : (
+                    <a
+                      href={store.link}
+                      className="px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-md hover:bg-blue-700 transition-colors"
+                    >
+                      Visit Website
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

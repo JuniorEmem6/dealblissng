@@ -21,7 +21,7 @@ const Oraimo = () => {
   const coupons = [
     {
       id: 1,
-      code: "SUMMER25",
+      code: "ERAGON",
       discount: "25% OFF",
       title: "Summer Sale Discount",
       description: "Get 25% off on selected summer items. Minimum purchase of $50 required. Exclusions apply.",
@@ -107,7 +107,7 @@ const Oraimo = () => {
             <p className="text-gray-600">{store.description}</p>
           </div>
           <a 
-            href={`https://fundednext.com/?fpr=aniekan61`} 
+            href={`https://ng.oraimo.com/?affiliate_code=gQU41bWUcc`} 
             target="_blank" 
             rel="noopener noreferrer"
             className="w-full md:w-auto px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md whitespace-nowrap text-center transition-colors"

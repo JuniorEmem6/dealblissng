@@ -10,9 +10,9 @@ const TopDeals = () => {
       discount: 'ORAIMONG10',
       description: 'Get an exclusive discount on Oraimo Nigeria',
       category: 'Electronics',
-      image: 'https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+      image: "https://logo.clearbit.com/oraimo.com",
       featured: true,
-      link: "https://fundednext.com/?fpr=aniekan61"
+      link: "https://ng.oraimo.com/?affiliate_code=gQU41bWUcc"
     },
     {
       id: 2,
@@ -20,18 +20,18 @@ const TopDeals = () => {
       discount: 'FUNDEDNEXT',
       description: 'Get an exclusive discount on FundedNext',
       category: 'Prop Firm',
-      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+      image: 'https://logo.clearbit.com/fundednext.com',
       link: "https://fundednext.com/?fpr=aniekan61"
 
     },
     {
       id: 3,
-      title: 'Shopinverse',
-      discount: 'SHOPINV12',
-      description: 'Get an exclusive discount on FundedNext',
+      title: 'Aliexpress',
+      discount: 'N/A',
+      description: 'Get an exclusive discount on Aliexpress',
       category: 'Appliances',
-      image: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-      link: "https://fundednext.com/?fpr=aniekan61"
+      image: 'https://logo.clearbit.com/aliexpress.com',
+      link: "https://s.click.aliexpress.com/e/_oEe51n5"
     },
 
   ];

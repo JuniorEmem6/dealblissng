@@ -16,17 +16,6 @@ const TermsAndConditions = () => {
       <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-sm overflow-hidden">
           {/* Header */}
-          <div className="bg-blue-600 p-6 sm:p-8">
-            <div className="flex items-center">
-              <FiFileText className="text-white text-3xl mr-4" />
-              <h1 className="text-2xl sm:text-3xl font-bold text-white">
-                Terms and Conditions
-              </h1>
-            </div>
-            <p className="mt-2 text-blue-100">
-              Last updated: {new Date().toLocaleDateString()}
-            </p>
-          </div>
 
           {/* Content */}
           <div className="p-6 sm:p-8 prose prose-blue max-w-none">

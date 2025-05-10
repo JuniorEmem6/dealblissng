@@ -3,7 +3,7 @@ import { FiCopy, FiShoppingCart, FiClock, FiInfo, FiTag, FiChevronDown, FiChevro
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-const Ftmo = () => {
+const ShopInVerse = () => {
   const [activeTab, setActiveTab] = useState('coupons');
   const [expandedCoupon, setExpandedCoupon] = useState(null);
   const [copiedCoupon, setCopiedCoupon] = useState(null);
@@ -11,47 +11,47 @@ const Ftmo = () => {
   // Sample store data
   const store = {
     name: "FTMO",
-    logo: "https://logo.clearbit.com/ftmo.com",
+    logo: "https://logo.clearbit.com/shopinverse.com",
     rating: 4.7,
-    categories: ["Prop", "Trading"],
-    description: "FTMO is Dedicated 24/7 That Perfectly Suits Your Style and Needs"
+    categories: ["Electronics"],
+    description: "Get all the electroic exclusive deals and coupons"
   };
 
   // Sample coupons data
   const coupons = [
     {
       id: 1,
-      code: "SUMMER25",
+      code: "ERAGON",
       discount: "25% OFF",
       title: "Summer Sale Discount",
-      description: "Get 25% off on selected summer items. Minimum purchase of $50 required. Exclusions apply.",
+      description: "Get 25% off on selected summer items. Exclusions apply.",
       expiry: "2023-08-31",
       terms: "Valid on select items. Cannot be combined with other offers. Limited time only.",
       verified: true,
       used: 1243
     },
-    {
-      id: 2,
-      code: "FREESHIP",
-      discount: "Free Shipping",
-      title: "Free Shipping Offer",
-      description: "Free standard shipping on all orders over $25. No code needed.",
-      expiry: "2023-12-31",
-      terms: "Applies to standard shipping only. Valid for continental US addresses.",
-      verified: true,
-      used: 892
-    },
-    {
-      id: 3,
-      code: "TECH15",
-      discount: "15% OFF",
-      title: "Tech Special",
-      description: "15% off all electronics and tech accessories.",
-      expiry: "2023-07-15",
-      terms: "Only valid for electronics category. Max discount $100.",
-      verified: true,
-      used: 567
-    }
+    // {
+    //   id: 2,
+    //   code: "FREESHIP",
+    //   discount: "Free Shipping",
+    //   title: "Free Shipping Offer",
+    //   description: "Free standard shipping on all orders over $25. No code needed.",
+    //   expiry: "2023-12-31",
+    //   terms: "Applies to standard shipping only. Valid for continental US addresses.",
+    //   verified: true,
+    //   used: 892
+    // },
+    // {
+    //   id: 3,
+    //   code: "TECH15",
+    //   discount: "15% OFF",
+    //   title: "Tech Special",
+    //   description: "15% off all electronics and tech accessories.",
+    //   expiry: "2023-07-15",
+    //   terms: "Only valid for electronics category. Max discount $100.",
+    //   verified: true,
+    //   used: 567
+    // }
   ];
 
   const handleCopyCode = (code, id) => {
@@ -107,7 +107,7 @@ const Ftmo = () => {
             <p className="text-gray-600">{store.description}</p>
           </div>
           <a 
-            href={`https://trader.ftmo.com/?affiliates=NffEcTeRgiBnwgiWodHy`} 
+            href={`https://fundednext.com/?fpr=aniekan61`} 
             target="_blank" 
             rel="noopener noreferrer"
             className="w-full md:w-auto px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md whitespace-nowrap text-center transition-colors"
@@ -368,4 +368,4 @@ const Ftmo = () => {
   );
 };
 
-export default Ftmo;
+export default ShopInVerse;

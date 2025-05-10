@@ -3,18 +3,18 @@ import { FiCopy, FiShoppingCart, FiClock, FiInfo, FiTag, FiChevronDown, FiChevro
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-const Ftmo = () => {
+const Betng = () => {
   const [activeTab, setActiveTab] = useState('coupons');
   const [expandedCoupon, setExpandedCoupon] = useState(null);
   const [copiedCoupon, setCopiedCoupon] = useState(null);
 
   // Sample store data
   const store = {
-    name: "FTMO",
-    logo: "https://logo.clearbit.com/ftmo.com",
+    name: "1xBetng",
+    logo: "https://logo.clearbit.1xbetng.com",
     rating: 4.7,
-    categories: ["Prop", "Trading"],
-    description: "FTMO is Dedicated 24/7 That Perfectly Suits Your Style and Needs"
+    categories: ["Betting"],
+    description: "Gain access to the bookmaker and enjoy good odd."
   };
 
   // Sample coupons data
@@ -60,9 +60,9 @@ const Ftmo = () => {
     setTimeout(() => setCopiedCoupon(null), 2000);
   };
 
-  const toggleCouponExpand = (id) => {
-    setExpandedCoupon(expandedCoupon === id ? null : id);
-  };
+//   const toggleCouponExpand = (id) => {
+//     setExpandedCoupon(expandedCoupon === id ? null : id);
+//   };
 
   return (
     <> 
@@ -107,7 +107,7 @@ const Ftmo = () => {
             <p className="text-gray-600">{store.description}</p>
           </div>
           <a 
-            href={`https://trader.ftmo.com/?affiliates=NffEcTeRgiBnwgiWodHy`} 
+            href={`https://affpa.top/L?tag=d_3666337m_97c_&site=3666337&ad=97&r=registration`} 
             target="_blank" 
             rel="noopener noreferrer"
             className="w-full md:w-auto px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md whitespace-nowrap text-center transition-colors"
@@ -363,9 +363,8 @@ const Ftmo = () => {
       </div>
     </section>
     <Footer />
-
     </>
   );
 };
 
-export default Ftmo;
+export default Betng;

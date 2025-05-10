@@ -119,7 +119,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold text-white mb-4">
               Trending Deals
             </h4>
-            <ul className="space-y-2">
+            <ul className="space-y-2 flex justify-around">
               <Link to="/fundednext" onClick={scrollToTop}>
                 <li className="hover:text-white transition-colors">
                   FundedNext

@@ -9,7 +9,7 @@ const PopularStores = () => {
       name: "Oraimo Nigeria",
       logo: "https://logo.clearbit.com/oraimo.com",
       category: "Electronic",
-      link: "",
+      link: "https://ng.oraimo.com/?affiliate_code=gQU41bWUcc",
       address: "/oraimo",
       rating: 4.8,
     },
@@ -22,12 +22,22 @@ const PopularStores = () => {
       address: "/fundednext",
       rating: 4.5,
     },
+
+    {
+      id: 2,
+      name: "Maven",
+      logo: "https://logo.clearbit.com/maven.com",
+      category: "Prop Firm",
+      link: "",
+      address: "/maven",
+      rating: 4.5,
+    },
     {
       id: 3,
       name: "Headway",
       logo: "https://logo.clearbit.com/headway.com",
       category: "Broker",
-      link: "",
+      link: "https://headway.partners/user/signup?hwp=498720",
       rating: 4.6,
     },
     {
@@ -35,7 +45,7 @@ const PopularStores = () => {
       name: "Shopinverse",
       logo: "https://logo.clearbit.com/shopinverse.com",
       category: "Appliances",
-      address: "",
+      link: "https://shopinverse.com/?sca_ref=7992792.NTMFPOs63NA",
       rating: 4.3,
     },
   ];

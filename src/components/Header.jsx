@@ -21,7 +21,7 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white text-blue-500 shadow-md">
+    <header className="bg-white text-blue-500 shadow-md">
       <div className="container mx-auto px-4 py-6 flex flex-wrap items-center justify-between">
         {/* Logo and mobile menu button */}
         <div className="flex items-center justify-between w-full md:w-auto">
@@ -166,13 +166,52 @@ const Header = () => {
                 FundedNext
               </p>
               </Link>
-              <Link to="/oraimo" onClick={scrollToTop}>
+              <Link to="/1xbetng" onClick={scrollToTop}>
               <p
                 className="block px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-blue-600"
               >
-                Oraimo Ghana
+                1xBetng
               </p>
               </Link>
+              <Link to="/aliepress" onClick={scrollToTop}>
+              <p
+                className="block px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-blue-600"
+              >
+                AlieExpress
+              </p>
+              </Link>
+              <Link to="/instant" onClick={scrollToTop}>
+              <p
+                className="block px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-blue-600"
+              >
+                Instant
+              </p>
+              </Link>
+
+              <Link to="/funderpro" onClick={scrollToTop}>
+              <p
+                className="block px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-blue-600"
+              >
+                Fudedepro
+              </p>
+              </Link>
+
+              <Link to="/ftmo" onClick={scrollToTop}>
+              <p
+                className="block px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-blue-600"
+              >
+               Ftmo
+              </p>
+              </Link>
+
+              <Link to="/shopinverse" onClick={scrollToTop}>
+              <p
+                className="block px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-blue-600"
+              >
+               Shopinverse
+              </p>
+              </Link>
+
             </div>
           </div>
 

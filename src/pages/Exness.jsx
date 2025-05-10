@@ -3,7 +3,7 @@ import { FiCopy, FiShoppingCart, FiClock, FiInfo, FiTag, FiChevronDown, FiChevro
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-const Exness = () => {
+const Aliexpress = () => {
   const [activeTab, setActiveTab] = useState('coupons');
   const [expandedCoupon, setExpandedCoupon] = useState(null);
   const [copiedCoupon, setCopiedCoupon] = useState(null);
@@ -11,7 +11,7 @@ const Exness = () => {
   // Sample store data
   const store = {
     name: "FundedNext",
-    logo: "https://logo.clearbit.com/exness.com",
+    logo: "https://logo.clearbit.com/alibaba.com",
     rating: 4.7,
     categories: ["Broker", "Leverage", "Trading"],
     description: "Trade with the world’s largest retail broker and benefit from better-than-market conditions."
@@ -107,7 +107,7 @@ const Exness = () => {
             <p className="text-gray-600">{store.description}</p>
           </div>
           <a 
-            href={`https://fundednext.com/?fpr=aniekan61`} 
+            href={`https://s.click.aliexpress.com/e/_oEe51n5`} 
             target="_blank" 
             rel="noopener noreferrer"
             className="w-full md:w-auto px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md whitespace-nowrap text-center transition-colors"
@@ -368,4 +368,4 @@ const Exness = () => {
   );
 };
 
-export default Exness;
+export default Aliexpress;

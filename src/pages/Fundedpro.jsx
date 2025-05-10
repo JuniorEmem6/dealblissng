@@ -3,18 +3,18 @@ import { FiCopy, FiShoppingCart, FiClock, FiInfo, FiTag, FiChevronDown, FiChevro
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-const Ftmo = () => {
+const FundedPro = () => {
   const [activeTab, setActiveTab] = useState('coupons');
   const [expandedCoupon, setExpandedCoupon] = useState(null);
   const [copiedCoupon, setCopiedCoupon] = useState(null);
 
   // Sample store data
   const store = {
-    name: "FTMO",
-    logo: "https://logo.clearbit.com/ftmo.com",
+    name: "Fundeepro",
+    logo: "https://logo.clearbit.com/funderpro.com",
     rating: 4.7,
     categories: ["Prop", "Trading"],
-    description: "FTMO is Dedicated 24/7 That Perfectly Suits Your Style and Needs"
+    description: "FunderPro is Dedicated 24/7 That Perfectly Suits Your Style and Needs"
   };
 
   // Sample coupons data
@@ -107,7 +107,7 @@ const Ftmo = () => {
             <p className="text-gray-600">{store.description}</p>
           </div>
           <a 
-            href={`https://trader.ftmo.com/?affiliates=NffEcTeRgiBnwgiWodHy`} 
+            href={`https://funderpro.cxclick.com/visit/?bta=38385&brand=funderpro`} 
             target="_blank" 
             rel="noopener noreferrer"
             className="w-full md:w-auto px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md whitespace-nowrap text-center transition-colors"
@@ -368,4 +368,4 @@ const Ftmo = () => {
   );
 };
 
-export default Ftmo;
+export default FundedPro;

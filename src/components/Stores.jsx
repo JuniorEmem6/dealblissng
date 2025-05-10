@@ -106,11 +106,11 @@ const PopularStores = () => {
         </div>
 
         {/* View More Button */}
-        <div className="mt-10 text-center">
+        {/* <div className="mt-10 text-center">
           <button className="px-6 py-3 border border-gray-300 text-gray-700 font-medium rounded-md hover:bg-gray-100 transition-colors">
             View All Stores
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

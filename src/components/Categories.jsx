@@ -8,37 +8,27 @@ const PopularCategories = () => {
       id: 1,
       name: 'Electronics',
       image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-      items: '1,240 products'
     },
     {
       id: 2,
       name: 'Fashion',
       image: 'https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-      items: '980 products'
     },
     {
       id: 3,
       name: 'Home & Kitchen',
       image: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-      items: '1,560 products'
     },
     {
       id: 4,
       name: 'Beauty',
       image: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-      items: '720 products'
     },
-    {
-      id: 5,
-      name: 'Sports',
-      image: 'https://images.unsplash.com/photo-1579952363872-2898cd6d7ef1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-      items: '890 products'
-    },
+
     {
       id: 6,
-      name: 'Toys & Games',
+      name: 'Game Station',
       image: 'https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-      items: '1,100 products'
     }
   ];
 
@@ -48,16 +38,14 @@ const PopularCategories = () => {
         {/* Section Header */}
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-8">
           <div>
-            <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
+            <h2 className="text-3xl font-bold text-blue-500 sm:text-4xl">
               Popular Categories
             </h2>
             <p className="mt-2 text-lg text-gray-600">
               Shop from our most popular collections
             </p>
           </div>
-          <button className="mt-4 sm:mt-0 flex items-center text-blue-600 font-medium hover:text-blue-800 transition-colors">
-            Browse all categories <FiArrowRight className="ml-1" />
-          </button>
+         
         </div>
 
         {/* Categories Grid */}
@@ -94,11 +82,6 @@ const PopularCategories = () => {
         </div>
 
         {/* Mobile View More Button */}
-        <div className="mt-8 text-center sm:hidden">
-          <button className="px-6 py-3 border border-gray-300 text-gray-700 font-medium rounded-md hover:bg-gray-100 transition-colors">
-            View More Categories
-          </button>
-        </div>
       </div>
     </section>
   );

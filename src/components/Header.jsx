@@ -14,17 +14,17 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white text-[blue] shadow-md">
-      <div className="container mx-auto px-4 py-3 flex flex-wrap items-center justify-between">
+    <header className="sticky top-0 z-50 bg-white text-blue-500 shadow-md">
+      <div className="container mx-auto px-4 py-6 flex flex-wrap items-center justify-between">
         {/* Logo and mobile menu button */}
         <div className="flex items-center justify-between w-full md:w-auto">
           <Link to="/">
-            <p className="text-2xl font-bold text-[blue]">Dealbliss</p>
+            <p className="text-2xl font-bold text-blue-500">Dealbliss</p>
           </Link>
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden text-white focus:outline-none"
+            className="md:hidden text-blue-500 focus:outline-none"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -67,7 +67,7 @@ const Header = () => {
           <form onSubmit={handleSearch} className="flex">
             <input
               type="text"
-              className="flex-grow px-4 py-2 rounded-l-md focus:outline-none focus:ring-2 focus:ring-gray-800 text-gray-800"
+              className="flex-grow px-4 py-2 border-gray-500 rounded-l-md focus:outline-none focus:ring-2 focus:ring-gray-800 text-gray-800 "
               placeholder="Search..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}

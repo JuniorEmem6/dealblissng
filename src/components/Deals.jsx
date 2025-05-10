@@ -6,41 +6,30 @@ const TopDeals = () => {
   const deals = [
     {
       id: 1,
-      title: 'Summer Fashion Sale',
-      discount: '50% OFF',
-      description: 'On selected apparel and accessories',
-      timeLeft: '6h 23m',
-      category: 'Fashion',
+      title: 'Oraimo Nigeria',
+      discount: 'ORAIMONG10',
+      description: 'Get an exclusive discount on Oraimo Nigeria',
+      category: 'Electronics',
       image: 'https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
       featured: true
     },
     {
       id: 2,
-      title: 'Electronics Clearance',
-      discount: 'Up to 70% OFF',
-      description: 'Smartphones, laptops, and gadgets',
-      timeLeft: '4h 45m',
-      category: 'Electronics',
+      title: 'FundedNext',
+      discount: 'FUNDEDNEXT',
+      description: 'Get an exclusive discount on FundedNext',
+      category: 'Prop Firm',
       image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
     },
     {
       id: 3,
-      title: 'Home Essentials',
-      discount: 'Buy 1 Get 1 Free',
-      description: 'Kitchenware and home decor',
-      timeLeft: '8h 12m',
-      category: 'Home',
+      title: 'Shopinverse',
+      discount: 'SHOPINV12',
+      description: 'Get an exclusive discount on FundedNext',
+      category: 'Appliances',
       image: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
     },
-    {
-      id: 4,
-      title: 'Weekend Grocery Specials',
-      discount: '30% OFF',
-      description: 'Fresh produce and pantry staples',
-      timeLeft: '1d 2h',
-      category: 'Grocery',
-      image: 'https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
-    }
+
   ];
 
   return (
@@ -49,23 +38,23 @@ const TopDeals = () => {
         {/* Section Header */}
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-8">
           <div>
-            <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
+            <h2 className="text-[25px] font-bold text-blue-500 sm:text-3xl">
               Top Deals You Can't Miss Today
             </h2>
-            <p className="mt-2 text-lg text-gray-600">
+            {/* <p className="mt-2 text-lg text-gray-600">
               Limited-time offers ending soon
-            </p>
+            </p> */}
           </div>
-          <button className="mt-4 sm:mt-0 flex items-center text-blue-600 font-medium hover:text-blue-800 transition-colors">
+          {/* <button className="mt-4 sm:mt-0 flex items-center text-blue-600 font-medium hover:text-blue-800 transition-colors">
             View all deals <FiChevronRight className="ml-1" />
-          </button>
+          </button> */}
         </div>
 
         {/* Timer Banner */}
-        <div className="bg-amber-500 text-white rounded-lg p-4 mb-8 flex items-center justify-center">
+        {/* <div className="bg-amber-500 text-white rounded-lg p-4 mb-8 flex items-center justify-center">
           <FiClock className="mr-2" />
           <span className="font-medium">These deals expire in: 12h 34m 56s</span>
-        </div>
+        </div> */}
 
         {/* Deals Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -104,10 +93,6 @@ const TopDeals = () => {
                 </p>
                 
                 <div className="flex items-center justify-between">
-                  <div className="flex items-center">
-                    <FiClock className="text-gray-400 mr-1" />
-                    <span className="text-sm text-gray-500">{deal.timeLeft} left</span>
-                  </div>
                   <span className="bg-amber-100 text-amber-800 px-2 py-1 rounded-md text-sm font-bold">
                     {deal.discount}
                   </span>
@@ -118,7 +103,7 @@ const TopDeals = () => {
               <div className="px-5 pb-5">
                 <button className="w-full py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md transition-colors flex items-center justify-center">
                   <FiShoppingBag className="mr-2" />
-                  Shop Now
+                  Visit Site
                 </button>
               </div>
             </div>
@@ -126,11 +111,11 @@ const TopDeals = () => {
         </div>
 
         {/* Mobile View More Button */}
-        <div className="mt-8 text-center md:hidden">
+        {/* <div className="mt-8 text-center md:hidden">
           <button className="px-6 py-3 border border-gray-300 text-gray-700 font-medium rounded-md hover:bg-gray-100 transition-colors">
             Load More Deals
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );
